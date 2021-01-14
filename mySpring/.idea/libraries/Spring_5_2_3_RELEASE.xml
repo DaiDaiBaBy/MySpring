@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="Spring-5.2.3.RELEASE" type="spring">
+    <properties version="5.2.3.RELEASE" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/HelloString/lib/spring-aspects-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/HelloString/lib/spring-context-support-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/HelloString/lib/spring-aop-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/HelloString/lib/spring-beans-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/HelloString/lib/spring-instrument-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/HelloString/lib/spring-expression-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/HelloString/lib/spring-context-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/HelloString/lib/spring-jdbc-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/HelloString/lib/spring-orm-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/HelloString/lib/spring-oxm-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/HelloString/lib/spring-jms-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/HelloString/lib/spring-messaging-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/HelloString/lib/spring-test-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/HelloString/lib/spring-tx-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/HelloString/lib/aopalliance-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/HelloString/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/HelloString/lib/spring-core-5.2.3.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

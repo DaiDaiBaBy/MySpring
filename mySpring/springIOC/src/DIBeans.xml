@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--Spring 依赖注入演示-->
+    <bean id="textEditor" class="com.zhoufu.spring_di.ConstructorDi.TextEditor">
+        <constructor-arg ref="spellChecker"/>
+    </bean>
+    <bean id="spellChecker" class="com.zhoufu.spring_di.ConstructorDi.SpellChecker"/>
+
+    <!--依赖注入 设值函数注入方式演示-->
+    <bean id="Di_textEditor" class="com.zhoufu.spring_di.SetValueDi.TextEditor">
+        <property name="checker" ref="checker"/>
+    </bean>
+    <bean id="checker" class="com.zhoufu.spring_di.SetValueDi.Checker"/>
+</beans>

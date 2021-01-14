@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="beanFactory_helloWorld" class="com.zhoufu.spring_ioc.BeanFactory.HelloWorld">
+    <property name="message" value="Spring BeanFactory HelloWorld!" />
+</bean>
+
+<bean id="applicationContext_helloWorld" class="com.zhoufu.spring_ioc.ApplicationContext.HelloWorld">
+    <property name="message" value="Spring ApplicationContext HelloWorld!"/>
+</bean>
+
+
+    <!--Bean作用域演示-->
+<bean id="singleton_helloWorld" class="com.zhoufu.spring_ioc.SingletonBeanDemo.HelloWorld" scope="singleton"/>
+<bean scope="prototype" class="com.zhoufu.spring_ioc.PrototypeBeanDemo.HelloWorld" id="prototype_helloWorld"/>
+    <!--Bean生命周期演示-->
+<bean id="init_destroy_helloWorld"
+      class="com.zhoufu.spring_ioc.BeanInitAndDisposalble.HelloWorld"
+      init-method="init" destroy-method="destroy">
+    <property name="message" value="bean初始化和销毁演示"/>
+</bean>
+    <!--Bean 后置处理配置 BeanPostProcessor-->
+<bean id="beanPostProcessor_helloWorld"
+      class="com.zhoufu.spring_ioc.BeanPostProcessor.HelloWorld"
+       init-method="init" destroy-method="destroy">
+    <property name="message" value="演示Bean后置器配置 HelloWorld!"/>
+</bean>
+<bean class="com.zhoufu.spring_ioc.BeanPostProcessor.InitHelloWorld"/>
+
+    <!--Bean 继承 演示 -->
+<bean id="beanImplement_helloWorld" class="com.zhoufu.spring_ioc.BeanImplement.HelloWorld">
+    <property name="message1" value="Hello World!"/>
+    <property name="message2" value="Hello Second World!"/>
+</bean>
+<bean id="helloIndia" class="com.zhoufu.spring_ioc.BeanImplement.HelloIndia" parent="beanImplement_helloWorld">
+    <property name="message1" value="hello india!"/>
+    <property name="message3" value="Namaste India!"/>
+</bean>
+</beans>
