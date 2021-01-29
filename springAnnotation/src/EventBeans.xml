@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--Spring 事件处理 配置-->
+    <bean id="helloWorld" class="com.zhoufu.spring_Event.HelloWorld">
+        <property name="message" value="Spring 事物处理配置"/>
+    </bean>
+    <bean id="cStartEventHandler" class="mySpring.springAnnotation.src.com.zhoufu.spring_Event.CStartEventHandler"/>
+    <bean id="cStoppedEventHandler" class="com.zhoufu.spring_Event.CStopEventHandler"/>
+</beans>
